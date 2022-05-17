@@ -1,6 +1,7 @@
 library(tidyverse)
 library(dplyr)
 library(readxl)
+library(openxlsx)
 
 # Este Script borra en las BBDD el año y los meses que le indico
 
@@ -79,4 +80,38 @@ A30_BBDD <- A30_BBDD %>% filter(Fecha != fechas_a_borrar)
 A32_BBDD <- A32_BBDD %>% filter(Fecha != fechas_a_borrar)
 
 }
+
+write.xlsx(A04_1_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/A04_1 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A04_3_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/A04_3 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(B_AP_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/B_AP BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(B_IMG_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/B_IMG BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(B_LAB_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/B_LAB BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(B_UMT_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/B_UMT BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(B17ADT_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/B17ADT BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+
+write.xlsx(A06_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A06 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A07_BBDD_CN, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A07 BBDD CN.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A07_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A07 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A09_BBDD_01, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A09 BBDD_01.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A09_BBDD_02, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A09 BBDD_02.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A09_BBDD_03, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A09 BBDD_03.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A28_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A28 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A30_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A30 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A32_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A32 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+
+write.xlsx(A21_1_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/A21_1 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A21_2_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/A21_2 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A21_3_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/A21_3 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A21_4_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/A21_4 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(B_Qf_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/B_Qf BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(B171_Qf_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/B171_Qf BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(B172_Qf_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/B172_Qf BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+
+write.xlsx(A08_BBDD_01, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Urgencia/A08 BBDD_01.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A08_BBDD_02, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Urgencia/A08 BBDD_02.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A08_BBDD_03, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Urgencia/A08 BBDD_03.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A08_BBDD_04, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Urgencia/A08 BBDD_04.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A08_BBDD_05, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Urgencia/A08 BBDD_05.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A08_BBDD_06, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Urgencia/A08 BBDD_06.xlsx", colNames = TRUE, overwrite = TRUE)
+
 

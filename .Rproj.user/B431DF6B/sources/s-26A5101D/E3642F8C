@@ -3,7 +3,7 @@
     "path": "~/GitHub/Borrado_automatico/Borrado_BBDD_REM.R",
     "project_path": "Borrado_BBDD_REM.R",
     "type": "r_source",
-    "hash": "1536567674",
+    "hash": "3608050965",
     "contents": "",
     "dirty": false,
     "created": 1652797959559.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "69,0",
-        "scrollLine": "51"
+        "cursorPosition": "116,0",
+        "scrollLine": "92"
     },
     "folds": "",
-    "lastKnownWriteTime": 1652800233,
+    "lastKnownWriteTime": 1652803451,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1652800233170,
+    "last_content_update": 1652803451824,
     "read_only": false,
     "read_only_alternatives": []
 }

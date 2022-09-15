@@ -6,7 +6,7 @@ library(openxlsx)
 # Este Script borra en las BBDD el año y los meses que le indico
 
 anio_borrar <- "2022"
-meses_borrar <- c("01","02","03")
+meses_borrar <- c("04")
 
 # ADT
 A04_1_BBDD <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/A04_1 BBDD.xlsx")

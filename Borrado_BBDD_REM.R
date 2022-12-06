@@ -6,7 +6,8 @@ library(openxlsx)
 # Este Script borra en las BBDD el año y los meses que le indico
 
 anio_borrar <- "2022"
-meses_borrar <- c("04")
+meses_borrar <- c("01","02","03","04","05","06","07","08", "09")
+#,"02","03","04","05","06","07","08")
 
 # ADT
 A04_1_BBDD <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/A04_1 BBDD.xlsx")
@@ -26,6 +27,7 @@ A09_BBDD_03 <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/Am
 A28_BBDD <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A28 BBDD.xlsx")
 A30_BBDD <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A30 BBDD.xlsx")
 A32_BBDD <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A32 BBDD.xlsx")
+A19b_BBDD <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/OIRS/A19b BBDD.xlsx")
 # Quirurgico
 A21_1_BBDD <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/A21_1 BBDD.xlsx")
 A21_2_BBDD <- read_excel("C:/Users/control.gestion3/OneDrive/BBDD Produccion/Quirurgico/A21_2 BBDD.xlsx")
@@ -52,6 +54,7 @@ A08_BBDD_03 <- A08_BBDD_03 %>% filter(Fecha != fechas_a_borrar)
 A08_BBDD_04 <- A08_BBDD_04 %>% filter(Fecha != fechas_a_borrar)
 A08_BBDD_05 <- A08_BBDD_05 %>% filter(Fecha != fechas_a_borrar)
 A08_BBDD_06 <- A08_BBDD_06 %>% filter(Fecha != fechas_a_borrar)
+A19b_BBDD <- A19b_BBDD %>% filter(Fecha != fechas_a_borrar)
 
 A21_1_BBDD <- A21_1_BBDD %>% filter(Fecha != fechas_a_borrar)
 A21_2_BBDD <- A21_2_BBDD %>% filter(Fecha != fechas_a_borrar)
@@ -88,6 +91,7 @@ write.xlsx(B_IMG_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/
 write.xlsx(B_LAB_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/B_LAB BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
 write.xlsx(B_UMT_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/B_UMT BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
 write.xlsx(B17ADT_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/ADyT/B17ADT BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
+write.xlsx(A19b_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/OIRS/A19b BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
 
 write.xlsx(A06_BBDD, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A06 BBDD.xlsx", colNames = TRUE, overwrite = TRUE)
 write.xlsx(A07_BBDD_CN, "C:/Users/control.gestion3/OneDrive/BBDD Produccion/Ambulatorio/A07 BBDD CN.xlsx", colNames = TRUE, overwrite = TRUE)
